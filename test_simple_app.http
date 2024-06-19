@@ -1,0 +1,21 @@
+### only age field
+curl -X POST http://127.0.0.1:8000/graphql -H "Content-Type: application/json" -d '{
+  "query": "{ user { age } }"
+}'
+
+### both age and name field
+
+curl -X POST http://127.0.0.1:8000/graphql -H "Content-Type: application/json" -d '{
+  "query": "{ user { age name} }"
+}'
+
+
+### graphql syntax
+# https://notes.dt.in.th/20220907T163410Z4258
+POST http://127.0.0.1:8000/graphql
+Content-Type: application/json
+X-REQUEST-TYPE: GraphQL
+
+query  {
+  user { age name}
+}
