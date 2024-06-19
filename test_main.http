@@ -1,0 +1,26 @@
+### graphql syntax
+# https://notes.dt.in.th/20220907T163410Z4258
+
+### book
+POST http://127.0.0.1:8000/graphql
+Content-Type: application/json
+X-REQUEST-TYPE: GraphQL
+
+query  {
+  book {
+    title
+    author
+  }
+}
+
+### books
+POST http://127.0.0.1:8000/graphql
+Content-Type: application/json
+X-REQUEST-TYPE: GraphQL
+
+query  {
+  books {
+    title
+    author
+  }
+}

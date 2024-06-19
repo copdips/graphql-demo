@@ -1,2 +1,3 @@
+ariadne
 fastapi[uvicorn]
 strawberry-graphql
